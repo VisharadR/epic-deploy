@@ -1,0 +1,49 @@
+
+
+.pframe {
+  position: relative;
+  border: 1px black;
+  width: 210px;
+  height: 200px;
+  background-color: darkseagreen;
+  overflow: hidden;
+  border-radius: 35px;
+  margin:0 auto 35px;
+}
+
+.pframe span{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  background-color: #000000;
+  color: #fff2f2;
+  opacity: 0.7;
+}
+
+
+
+.products {
+  width: 30%;
+  height: 10%;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow: hidden;
+  font-weight: 800;
+  font-style: normal;
+  font-family: "Epilogue", serif;
+  color: #4ad962;
+  font-size: 50px;
+  letter-spacing: -1.5px;
+  line-height: 0.9;
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+}
+
+
+
+
