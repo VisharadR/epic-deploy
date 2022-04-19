@@ -267,28 +267,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <!-- Main Menu -->
                         <nav id="main-menu" class="main-menu">
 							<ul>
-							  <li class="active"><a href="index.html">home</a></li>
+							  <li class="active"><a href={{ url_for( 'home' ) }}>home</a></li>
 							  <li>
-								<a href="shop.html">shop</a>
+								<a href={{ url_for( 'shop_page' ) }}>shop</a>
 								<ul class="sub-menu">
-								  <li><a href="shop.html">shop page</a></li>
+								  <li><a href={{ url_for( 'shop_page' ) }}>shop page</a></li>
 								  <li>
-									<a href="product-details.html">product details</a>
+									<a href={{ url_for( 'product_details' ) }}>product details</a>
 								  </li>
 								</ul>
 							  </li>
-							  <li><a href="about.html">about</a></li>
+							  <li><a href={{ url_for( 'about_page' ) }}>about</a></li>
 							  <li>
 								<a href="#">pages</a>
 								<ul class="sub-menu">
-								  <li><a href="cart.html">cart</a></li>
-								  <li><a href="checkout.html">checkout</a></li>
-								  <li><a href="wishlist.html">wishlist</a></li>
+								  <li><a href={{ url_for( 'cart_page' ) }}>cart</a></li>
+								  <li><a href={{ url_for( 'checkout_page' ) }}>checkout</a></li>
+								  <li><a href={{ url_for( 'wish_list' ) }}>wishlist</a></li>
 								</ul>
 							  </li>
-							  <li><a href="contact.html">contact</a></li>
-							  <li><a href="crop.html">Crop</a></li>
-							  <li><a href="fertilizer.html">Fertilizer</a></li>
+							  <li><a href={{ url_for( 'contact_page' ) }}>contact</a></li>
+							  <li><a href={{ url_for( 'crop_recommend' ) }}>Crop</a></li>
+							  <li><a href={{ url_for( 'fertilizer_recommendation' ) }}>Fertilizer</a></li>
 							  <li><a href={{ url_for( 'disease_prediction' ) }}>Disease</a></li>
 							</ul>
 						  </nav>

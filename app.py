@@ -148,7 +148,7 @@ def fertilizer_recommendation():
 def about_page():
     title = 'FarmEasy - about page'
 
-    return render_template('aobut.html', title=title)
+    return render_template('about.html', title=title)
 
 @ app.route('/cart')
 def cart_page():
@@ -192,7 +192,7 @@ def product_details():
 
     return render_template('product-details.html', title=title)
 
-@ app.route('/shop')
+@ app.route('/shopPage')
 def shop_page():
     title = 'FarmEasy - Shop'
 
