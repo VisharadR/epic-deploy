@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <title>{{ title }}</title>
-        <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}"/>
+        <link rel="shortcut icon" href= {{ url_for('static', filename='img/favicon.ico') }} />
         <!-- for-mobile-apps-->
         <meta name="viewport" content="width=width, initial-scale=1">
         <meta charset="utf-8">
@@ -10,22 +10,22 @@
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 		<!-- Google Fonts -->
 		<link
-		  href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i"
+		  href={{ url_for('static', filename = 'https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i') }}
 		  rel="stylesheet"
 		/>
 		<!-- CSS
 		============================================ -->
 		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="{{ url_for(css/bootstrap.min.css" />
+		<link rel="stylesheet" type = "text/css" href= {{ url_for('static', filename='css/bootstrap.min.css') }} />
 		<!-- Icon Font CSS -->
-		<link rel="stylesheet" href="css/font-awesome.min.css" />
-		<link rel="stylesheet" href="css/ionicons.min.css" />
+		<link rel="stylesheet" type = "text/css"  href= {{ url_for('static', filename='css/font-awesome.min.css') }} />
+		<link rel="stylesheet" type = "text/css"  href= {{ url_for('static', filename='css/ionicons.min.css') }} />
 		<!-- Plugins CSS -->
-		<link rel="stylesheet" href="css/plugins.css" />
+		<link rel="stylesheet" type = "text/css"  href= {{ url_for('static', filename='css/plugins.css') }} />
 		<!-- Style CSS -->
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" type = "text/css"  href= {{ url_for('static', filename='css/style.css' ) }}/>
 		<!-- Modernizer JS -->
-		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+		<script src={{ url_for('static', filename = 'js/vendor/modernizr-2.8.3.min.js') }}></script>
 	<style>
 		html {
 			font-size: 1rem;
@@ -140,16 +140,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- css files -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel='stylesheet' type='text/css' />
+	<link href={{ url_for('static', filename='css/bootstrap.css') }} rel='stylesheet' type='text/css' />
 	<!-- bootstrap css -->
-	<link href="{{ url_for('static', filename='css/style.css') }}" rel='stylesheet' type='text/css' />
+	<link href={{ url_for('static', filename='css/style.css') }} rel='stylesheet' type='text/css' />
 	<!-- custom css -->
-	<link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet"><!-- fontawesome css -->
+	<link href={{ url_for('static', filename='css/font-awesome.min.css') }} rel="stylesheet"><!-- fontawesome css -->
 	<!-- //css files -->
 	<!-- <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon.png?') }}"> -->
 
 
-	<script type="text/JavaScript" src="{{ url_for('static', filename='scripts/cities.js') }}"></script>
+	<script type="text/JavaScript" src= {{ url_for('static', filename='scripts/cities.js') }}></script>
 
 
 	<!-- google fonts -->
@@ -193,14 +193,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                                 <!-- Header Logo -->
                                 <div class="header-logo col-md-4 col-12">
-                                    <a href="index.html" class="logo"><img src="img/logo.png" alt="logo"></a>
+                                    <a href="index.html" class="logo">
+										<img src= {{url_for( 'static', filename='img/logo.png')}} alt="logo"></a>
                                 </div>
 
                                 <!-- Account Menu -->
                                 <div class="account-menu col-md-4 col-12">
                                     <ul>
                                         <li><a href="#">My Account</a></li>
-                                        <li><a href="wishlist.html">Wishlist</a></li>
+                                        <li><a href = 'wishlist.html'>Wishlist</a></li>
                                         <li><a href="#" data-toggle="dropdown"><i class="fa fa-shopping-cart"></i><span class="num">2</span></a>
                                             
                                            <!-- Mini Cart -->
@@ -209,17 +210,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                 <div class="all-cart-product clearfix">
                                                     <div class="single-cart clearfix">
                                                         <div class="cart-image">
-                                                            <a href="product-details.html"><img src="img/cart/1.jpg" alt=""></a>
+                                                            <a href=  'product-details.html'><img src= {{ url_for('static', filename='img/cart/1.jpg')}} alt=""></a>
                                                         </div>
                                                         <div class="cart-info">
-                                                            <h5><a href="product-details.html">Tomato</a></h5>
+                                                            <h5><a href= 'product-details.html'>Tomato</a></h5>
                                                             <p>1 x Rs 9.00</p>
                                                             <a href="#" class="cart-delete" title="Remove this item"><i class="fa fa-trash-o"></i></a>
                                                         </div>
                                                     </div>
                                                     <div class="single-cart clearfix">
                                                         <div class="cart-image">
-                                                            <a href="product-details.html"><img src="img/cart/2.jpg" alt=""></a>
+                                                            <a href="product-details.html"><img src={{url_for ('static', filename = 'img/cart/2.jpg') }} alt=""></a>
                                                         </div>
                                                         <div class="cart-info">
                                                             <h5><a href="product-details.html">Mango</a></h5>
@@ -260,7 +261,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                         <!-- Header Bottom Logo -->
                         <div class="header-bottom-logo">
-                            <a href="index.html" class="logo"><img src="img/logo.png" alt="logo"></a>
+                            <a href="index.html" class="logo"><img src={{url_for('static', filename = 'img/logo.png')}} alt="logo"></a>
                         </div>
 
                         <!-- Main Menu -->
@@ -288,7 +289,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							  <li><a href="contact.html">contact</a></li>
 							  <li><a href="crop.html">Crop</a></li>
 							  <li><a href="fertilizer.html">Fertilizer</a></li>
-							  <li><a href="disease.html">Desease</a></li>
+							  <li><a href={{ url_for( 'disease_prediction' ) }}>Disease</a></li>
 							</ul>
 						  </nav>
 
@@ -377,7 +378,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			   <div class="footer-widget col-lg-4 col-md-6 col-12 mb-40">
 				 <img
 				   class="footer-logo"
-				   src="img/footer-logo.png"
+				   src= {{url_for('static', filename = 'img/footer-logo.png')}}
 				   alt="logo"
 				 />
 				 <p>
@@ -448,17 +449,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 ============================================ -->
 
     <!-- jQuery JS -->
-    <script src="js/vendor/jquery-1.12.0.min.js"></script>
+    <script src={{ url_for('static', filename = 'js/vendor/jquery-1.12.0.min.js') }}></script>
     <!-- Popper JS -->
-    <script src="js/popper.min.js"></script>
+    <script src={{ url_for('static', filename = 'js/popper.min.js') }}></script>
     <!-- Bootstrap JS -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src={{ url_for( 'static', filename = 'js/bootstrap.min.js') }}></script>
     <!-- Plugins JS -->
-    <script src="js/plugins.js"></script>
+    <script src={{ url_for( 'static', filename = 'js/plugins.js') }}></script>
     <!-- Ajax Mail JS -->
-    <script src="js/ajax-mail.js"></script>
+    <script src={{ url_for( 'static', filename = 'js/ajax-mail.js') }}></script>
     <!-- Main JS -->
-    <script src="js/main.js"></script>
+    <script src={{ url_for ('static', filename  = 'js/main.js') }}></script>
   </body>
 
 </html> 

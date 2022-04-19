@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, Markup
+from flask import Flask, redirect, render_template, request, Markup
 import numpy as np
 import pandas as pd
 from utils.disease import disease_dic
@@ -91,7 +91,6 @@ def weather_fetch(city_name):
     else:
         return None
 
-
 def predict_image(img, model=disease_model):
     """
     Transforms image to tensor and predicts disease label
@@ -144,6 +143,72 @@ def fertilizer_recommendation():
 
     return render_template('fertilizer.html', title=title)
 
+
+@ app.route('/about')
+def about_page():
+    title = 'FarmEasy - about page'
+
+    return render_template('aobut.html', title=title)
+
+@ app.route('/cart')
+def cart_page():
+    title = 'FarmEasy - Cart'
+
+    return render_template('cart.html', title=title)
+
+@ app.route('/checkout')
+def checkout_page():
+    title = 'FarmEasy - Checkout'
+
+    return render_template('checkout.html', title=title)
+
+@ app.route('/contact')
+def contact_page():
+    title = 'FarmEasy - Contacts'
+
+    return render_template('contact.html', title=title)
+
+@ app.route('/index')
+def index_page():
+    title = 'FarmEasy - Index Page'
+
+    return render_template('index.html', title=title)
+
+@ app.route('/disease')
+def disease_page():
+    title = 'FarmEasy - Disease Page'
+
+    return render_template('disease.html', title=title)
+
+@ app.route('/layout')
+def layout_page():
+    title = 'FarmEasy - Layout'
+
+    return render_template('layout.html', title=title)
+
+@ app.route('/productdetails')
+def product_details():
+    title = 'FarmEasy - Product-Details'
+
+    return render_template('product-details.html', title=title)
+
+@ app.route('/shop')
+def shop_page():
+    title = 'FarmEasy - Shop'
+
+    return render_template('shop.html', title=title)
+
+@ app.route('/underconstruction')
+def under_construction():
+    title = 'FarmEasy - UnderConstruction'
+
+    return render_template('under-construction.html', title=title)
+
+@ app.route('/wishlist')
+def wish_list():
+    title = 'FarmEasy - WishList'
+
+    return render_template('wishlist.html', title=title)
 
 # ===============================================================================================
 
@@ -245,6 +310,7 @@ def disease_prediction():
         except:
             pass
     return render_template('disease.html', title=title)
+
 
 
 # ===============================================================================================

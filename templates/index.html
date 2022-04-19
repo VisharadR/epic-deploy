@@ -10,7 +10,7 @@
           <div class="row">
             <div class="col-lg-6 col-12 mb-30">
               <div class="single-banner">
-                <img src="img/banner/1.jpg" alt="banner" />
+                <img src={{ url_for('static' , filename = 'img/banner/1.jpg') }} alt="banner" />
                 <div class="banner-content right">
                   <h1 class="white"><span>Gifts</span>Christmas</h1>
                   <a href="#" class="button">Shop Now</a>
@@ -20,7 +20,7 @@
 
             <div class="col-lg-6 col-12 mb-30">
               <div class="single-banner">
-                <img src="img/banner/2.jpg" alt="banner" />
+                <img src={{ url_for('static' , filename = 'img/banner/2.jpg') }} alt="banner" />
                 <div class="banner-content left">
                   <h2 class="black">
                     <span class="small">Save <span class="red">25%</span></span
@@ -55,7 +55,7 @@
                 <div class="image">
                   <!-- Image -->
                   <a href="product-details.html" class="img"
-                    ><img src="img/product/1.jpg" alt="Product"
+                    ><img src={{ url_for('static', filename = 'img/product/1.jpg') }} alt="Product"
                   /></a>
                   <!-- Wishlist -->
                   <a href="#" class="wishlist"><i class="fa fa-heart-o"></i></a>
@@ -99,7 +99,7 @@
                 <div class="image">
                   <!-- Image -->
                   <a href="product-details.html" class="img"
-                    ><img src="img/product/2.jpg" alt="Product"
+                    ><img src={{ url_for('static', filename = 'img/product/2.jpg') }} alt="Product"
                   /></a>
                   <!-- Wishlist -->
                   <a href="#" class="wishlist"><i class="fa fa-heart-o"></i></a>
@@ -143,7 +143,7 @@
                 <div class="image">
                   <!-- Image -->
                   <a href="product-details.html" class="img"
-                    ><img src="img/product/3.jpg" alt="Product"
+                    ><img src={{ url_for('static', filename = 'img/product/3.jpg') }} alt="Product"
                   /></a>
                   <!-- Wishlist -->
                   <a href="#" class="wishlist"><i class="fa fa-heart-o"></i></a>
@@ -186,7 +186,7 @@
                 <div class="image">
                   <!-- Image -->
                   <a href="product-details.html" class="img"
-                    ><img src="img/product/4.jpg" alt="Product"
+                    ><img src={{ url_for('static', filename = 'img/product/4.jpg') }} alt="Product"
                   /></a>
                   <!-- Wishlist -->
                   <a href="#" class="wishlist"><i class="fa fa-heart-o"></i></a>
@@ -229,7 +229,7 @@
                 <div class="image">
                   <!-- Image -->
                   <a href="product-details.html" class="img"
-                    ><img src="img/product/5.jpg" alt="Product"
+                    ><img src={{ url_for('static', filename = 'img/product/5.jpg') }} alt="Product"
                   /></a>
                   <!-- Wishlist -->
                   <a href="#" class="wishlist"><i class="fa fa-heart-o"></i></a>
@@ -273,7 +273,7 @@
                 <div class="image">
                   <!-- Image -->
                   <a href="product-details.html" class="img"
-                    ><img src="img/product/6.jpg" alt="Product"
+                    ><img src={{ url_for('static', filename = 'img/product/6.jpg') }} alt="Product"
                   /></a>
                   <!-- Wishlist -->
                   <a href="#" class="wishlist"><i class="fa fa-heart-o"></i></a>
@@ -334,7 +334,7 @@
               <div class="testimonial-slider text-center">
                 <!-- Single Testimonial -->
                 <div class="single-testimonial">
-                  <img src="img/testimonial/1.jpg" alt="customer" />
+                  <img src={{ url_for('static', filename = 'img/testimonial/1.jpg') }} alt="customer" />
                   <p>
                     The tastiest vegetables I have ever had since I stopped
                     farming!
@@ -344,14 +344,14 @@
 
                 <!-- Single Testimonial -->
                 <div class="single-testimonial">
-                  <img src="img/testimonial/1.jpg" alt="customer" />
+                  <img src={{ url_for('static', filename = 'img/testimonial/1.jpg') }} alt="customer" />
                   <p>The mangoes were divine.</p>
                   <h5>Rajesh Rai</h5>
                 </div>
 
                 <!-- Single Testimonial -->
                 <div class="single-testimonial">
-                  <img src="img/testimonial/1.jpg" alt="customer" />
+                  <img src={{ url_for('static', filename = 'img/testimonial/1.jpg') }} alt="customer" />
                   <p>The carrot was so fresh and crispy!</p>
                   <h5>Mr. Khargosh</h5>
                 </div>
@@ -438,17 +438,16 @@
 ============================================ -->
 
     <!-- jQuery JS -->
-    <script src="js/vendor/jquery-1.12.0.min.js"></script>
-    <!-- Popper JS -->
-    <script src="js/popper.min.js"></script>
+    <script src={{ url_for('static' , filename = 'js/vendor/jquery-1.12.0.min.js') }}></script>
+    <!-- Popper JS --> 
+    <script src={{ url_for('static' , filename  = 'js/popper.min.js') }}></script>
     <!-- Bootstrap JS -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src={{ url_for('static' , filename  = 'js/bootstrap.min.js') }}></script>
     <!-- Plugins JS -->
-    <script src="js/plugins.js"></script>
+    <script src={{ url_for('static' , filename = 'js/plugins.js') }}></script>
     <!-- Ajax Mail JS -->
-    <script src="js/ajax-mail.js"></script>
+    <script src={{ url_for('static' , filename = 'js/ajax-mail.js') }}></script>
     <!-- Main JS -->
-    <script src="js/main.js"></script>
+    <script src={{ url_for('static' , filename  = 'js/main.js') }}></script>
 
-</html>
 {% endblock %}
