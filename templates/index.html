@@ -86,14 +86,24 @@
     <div class="hero-slider section fix">
 
         <!-- Hero Slide Item Start-->
-        <div class="hero-item" style="background-image: url(img/hero/1.jpg)">
+        <div class="hero-item" style=background-image:url({{ url_for('static' , filename = "img/bg/page-bg.png") }} )>
+          >
 
             <!-- Hero Content Start-->
             <div class="hero-content text-center m-auto">
 
-                <h2>Save 25%</h2>
-                <h1>Grand Opening Day Sale</h1>
-                <p>There are many variations of Farm produce available in the market, however the majority have suffered alteration in some form, by injections, or through chemical fertilizers. Our portal grants you the opppurtunity to break free from
+                <h2 style = "color: #202020">..</h2>
+                <h1 style = "color: #202020">Grand Opening Day Sale</h1>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <p style = "color: #C0C0C0">There are many variations of Farm produce available in the market, however the majority have suffered alteration in some form, by injections, or through chemical fertilizers. Our portal grants you the opppurtunity to break free from
                    such detrimental product by bringing to you our 100% authentic organic farm produce.</p>
                 <a href="#">LEARN MORE</a>
 
@@ -103,14 +113,23 @@
         </div><!-- Hero Slide Item End-->
 
         <!-- Hero Slide Item Start-->
-        <div class="hero-item" style="background-image: url(img/hero/2.jpg)">
+        <div class="hero-item" style = background-image:url({{ url_for('static' , filename = "img/bg/page-bg.png") }} )>
 
             <!-- Hero Content Start-->
             <div class="hero-content text-center m-auto">
 
-                <h2>Save 25%</h2>
-                <h1>Grand Opening Day Sale</h1>
-                <p>There are many variations of Farm produce available in the market, however the majority have suffered alteration in some form, by injections, or through chemical fertilizers. Our portal grants you the opppurtunity to break free from
+                <h2 style = "color: #202020">..</h2>
+                <h1 style = "color: #202020">Grand Opening Day Sale</h1>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <p style = "color: #C0C0C0">There are many variations of Farm produce available in the market, however the majority have suffered alteration in some form, by injections, or through chemical fertilizers. Our portal grants you the opppurtunity to break free from
                    such detrimental product by bringing to you our 100% authentic organic farm produce.</p>
                 <a href="#">LEARN MORE</a>
 
@@ -127,36 +146,7 @@
     <!-- Main Wrapper Start -->
     <div id="main-wrapper" class="section">
 
-      <!-- Banner Section Start-->
-      <div class="banner-section section pt-120">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-12 mb-30">
-              <div class="single-banner">
-                <img src={{ url_for('static' , filename = 'img/banner/1.jpg') }} alt="banner" />
-                <div class="banner-content right">
-                  <h1 class="white"><span>Gifts</span>Christmas</h1>
-                  <a href="#" class="button">Shop Now</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6 col-12 mb-30">
-              <div class="single-banner">
-                <img src={{ url_for('static' , filename = 'img/banner/2.jpg') }} alt="banner" />
-                <div class="banner-content left">
-                  <h2 class="black">
-                    <span class="small">Save <span class="red">25%</span></span
-                    ><span class="red">Offer</span> Christmas
-                  </h2>
-                  <a href="#" class="link">Shop Now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Banner Section End-->
+<!-- banner was here -->
 
       <!-- Product Section Start-->
       <div class="product-section section pt-70 pb-60">
@@ -164,7 +154,7 @@
           <!-- Section Title Start-->
           <div class="row">
             <div class="section-title text-center col mb-60">
-              <h1>Featured Products</h1>
+              <h1>Products</h1>
             </div>
           </div>
           <!-- Section Title End-->
@@ -440,7 +430,7 @@
       <!-- Testimonial Section Start-->
       <div
         class="testimonial-section section bg-gray pt-100 pb-65"
-        style="background-image: url(img/bg/testimonial.png)"
+        style=background-image: url({{ url_for('static' , filename = 'img/bg/testimonial.png' ) }} )
       >
         <div class="container">
           <!-- Section Title Start-->
