@@ -2,7 +2,7 @@
 
        
     <!-- Page Banner Section Start-->
-    <div class="page-banner-section section" style="background-image: url(img/bg/page-banner.jpg)">
+    <div class="page-banner-section section" style=background-image:url({{ url_for('static', filename="img/bg/page-banner.jpg") }})>
         <div class="container">
             <div class="row">
                 
@@ -67,6 +67,11 @@
        
     
 
-</div><!-- Main Wrapper End -->
 
+{% endblock %}
+
+{% block extra %} 
+<!-- Google Map Api -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlZPf84AAVt8_FFN7rwQY5nPgB02SlTKs"></script>
+<script src={{ url_for('static', filename="js/map.js") }}></script>
 {% endblock %}

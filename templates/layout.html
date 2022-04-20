@@ -342,6 +342,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <script src={{ url_for( 'static', filename = 'js/ajax-mail.js') }}></script>
     <!-- Main JS -->
     <script src={{ url_for ('static', filename  = 'js/main.js') }}></script>
+
+	{% block extra %} {% endblock %}
+
   </body>
 
 </html> 

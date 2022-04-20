@@ -3,7 +3,7 @@
 {% block body %}
 
     <!-- Page Banner Section Start-->
-    <div class="page-banner-section section" style="background-image: url(img/bg/page-banner.jpg)">
+    <div class="page-banner-section section" style=background-image:url({{ url_for('static' , filename = "img/bg/page-banner.jpg") }} ) >
         <div class="container">
             <div class="row">
                 
@@ -29,18 +29,18 @@
                    
                     <!-- Product Thumbnail -->
                     <div class="single-product-thumbnail product-thumbnail-slider float-left">
-                        <div class="single-thumb"><img src="img/product-details/thumb-c1.jpg" alt=""></div>
-                        <div class="single-thumb"><img src="img/product-details/thumb-c2.jpg" alt=""></div>
-                        <div class="single-thumb"><img src="img/product-details/thumb-c3.webp" alt=""></div>
-                        <div class="single-thumb"><img src="img/product-details/thumb-c4.jpg" alt=""></div>
+                        <div class="single-thumb"><img src={{ url_for('static', filename="img/product-details/thumb-c1.jpg") }} alt=""></div>
+                        <div class="single-thumb"><img src={{ url_for('static', filename="img/product-details/thumb-c2.jpg") }} alt=""></div>
+                        <div class="single-thumb"><img src={{ url_for('static', filename="img/product-details/thumb-c3.webp") }} alt=""></div>
+                        <div class="single-thumb"><img src={{ url_for('static', filename="img/product-details/thumb-c4.jpg") }} alt=""></div>
                     </div>
                     
                     <!-- Product Image -->
                     <div class="single-product-image product-image-slider fix">
-                        <div class="single-image"><img src="img/product-details/thumb-c1%20copy.jpg" alt=""></div>
-                        <div class="single-image"><img src="img/product-details/thumb-c2%20copy.jpg" alt=""></div>
-                        <div class="single-image"><img src="img/product-details/thumb-c3%20copy.webp" alt=""></div>
-                        <div class="single-image"><img src="img/product-details/thumb-c4%20copy.jpg" alt=""></div>
+                        <div class="single-image"><img src={{ url_for('static', filename="img/product-details/thumb-c1copy.jpg") }} alt=""></div>
+                        <div class="single-image"><img src={{ url_for('static', filename="img/product-details/thumb-c2copy.jpg") }} alt=""></div>
+                        <div class="single-image"><img src={{ url_for('static', filename="img/product-details/thumb-c3copy.webp") }} alt=""></div>
+                        <div class="single-image"><img src={{ url_for('static', filename="img/product-details/thumb-c4copy.jpg") }} alt=""></div>
                     </div>
                     
                 </div><!-- Product Image & Thumbnail End -->
