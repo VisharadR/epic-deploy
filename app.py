@@ -1,4 +1,7 @@
-from flask import Flask, redirect, render_template, request, Markup
+from flask import Flask, redirect, render_template, request, Markup, url_for, session
+from flask_mysqldb import MySQL
+import MySQLdb.cursors
+import re
 import numpy as np
 import pandas as pd
 from utils.disease import disease_dic
@@ -310,6 +313,8 @@ def disease_prediction():
         except:
             pass
     return render_template('disease.html', title=title)
+
+
 
 
 
